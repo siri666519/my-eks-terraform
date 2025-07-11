@@ -1,0 +1,15 @@
+cat <<EOF > .gitignore
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Local Terraform directory
+.terraform/
+
+# kubectl config
+kubeconfig
+
+# Eksctl archives
+eksctl.tar.gz
+gh.tar.gz
+EOF
